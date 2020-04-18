@@ -9,6 +9,8 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && \
 WORKDIR /app
 COPY . /app
 
+ENV API_URL=http://localhost:8000
+
 RUN npm install && \
     npm run build 
 

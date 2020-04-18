@@ -12,5 +12,6 @@ COPY . /app
 RUN npm install 
 
 EXPOSE 8000
+ENV FRONT_URL=http://localhost:5000
 
 ENTRYPOINT ["npm", "start"]
