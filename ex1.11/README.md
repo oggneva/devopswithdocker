@@ -24,6 +24,12 @@ To start the server in production mode: `npm start`
 
 Test that the project is running by going to <http://localhost:8000>
 
+To build and run with docker:
+```
+docker build -t ex1.11 .
+docker run -it --rm -p 8000:8000 -v $(pwd)/logs.txt:/app/logs.txt ex1.11
+```
+
 ## Exercise 1.12 -> accepting connections
 
 If your frontend is not running in the same origin, run the server with `FRONT_URL=<front-url> npm start` (without < >) to allow cross-origin requests.
