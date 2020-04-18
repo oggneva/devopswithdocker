@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack --mode production && serve -s -l 5000 dist",
     "build": "webpack --mode production",
+    "start-built": "serve -s -l 5000 dist",
     "dev": "webpack-dev-server --mode development --hot",
     "lint": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
